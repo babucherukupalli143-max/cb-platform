@@ -46,7 +46,6 @@
     <button onclick="show('login')">Login</button>
   </nav>
 </header>
-
 <main class="container">
   <section id="home">
     <div class="hero">
@@ -60,7 +59,6 @@
       <div class="card"><h3>Protected Content</h3><p>Premium content can be protected by access sessions.</p></div>
     </div>
   </section>
-
   <section id="achievements" class="hidden">
     <h2 class="title">Achievements</h2>
     <div class="cards">
@@ -70,7 +68,6 @@
       <div class="card"><h3>Rank Master</h3><p>Reach the required ranked milestone.</p><div class="progress"><div class="bar" style="width:60%"></div></div></div>
     </div>
   </section>
-
   <section id="videos" class="hidden">
     <h2 class="title">Videos</h2>
     <div class="cards">
@@ -79,7 +76,6 @@
       <div class="card"><h3>Protected Video</h3><p>Protected-content slot. Full 24-hour authentication requires a backend.</p></div>
     </div>
   </section>
-
   <section id="updates" class="hidden">
     <h2 class="title">Updates</h2>
     <div class="cards">
@@ -87,7 +83,6 @@
       <div class="card"><h3>Community Update</h3><p>More community content can be added later.</p></div>
     </div>
   </section>
-
   <section id="community" class="hidden">
     <h2 class="title">Community</h2>
     <div class="cards">
@@ -95,7 +90,6 @@
       <div class="card"><h3>Social Links</h3><p>Add your YouTube, Instagram and other links here.</p></div>
     </div>
   </section>
-
   <section id="login" class="hidden">
     <h2 class="title">Login</h2>
     <div class="card">
@@ -106,9 +100,7 @@
     </div>
   </section>
 </main>
-
 <footer>MR CB YT • Free Fire Achievement Hub & Community</footer>
-
 <script>
 function show(id){
   document.querySelectorAll('main section').forEach(s=>s.classList.add('hidden'));
