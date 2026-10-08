@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MR CB YT - Free Fire Achievement Hub</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#050814;color:white;min-height:100vh}
+header{text-align:center;padding:25px 15px;background:#080d1c;border-bottom:1px solid #174cff}
+.logo{font-size:30px;font-weight:bold;color:#00d9ff}
+.subtitle{margin-top:8px;color:#9da8c7}
+nav{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:15px;background:#070b17}
+nav button{padding:10px 15px;border-radius:10px;border:1px solid #174cff;background:#0d1428;color:white;cursor:pointer}
+nav button:hover{background:#174cff}
+.container{width:92%;max-width:1100px;margin:auto}
+.hero{text-align:center;padding:55px 15px}
+.hero h1{color:#00d9ff;font-size:34px;text-shadow:0 0 20px #008cff}
+.hero p{margin-top:12px;color:#aab4d0;line-height:1.6}
+.section-title{text-align:center;margin:35px 0 20px;color:#7c9cff}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:#0b1122;border:1px solid #193cff;border-radius:16px;padding:22px;box-shadow:0 0 15px rgba(0,90,255,.15)}
+.card h3{color:#00d9ff;margin-bottom:10px}
+.card p{color:#aab4d0;line-height:1.5}
+.progress-box{margin:20px 0 40px;padding:25px;text-align:center;background:#090f20;border:1px solid #263cff;border-radius:16px}
+.progress{width:100%;height:15px;margin-top:15px;background:#151b30;border-radius:20px;overflow:hidden}
+.progress-bar{width:25%;height:100%;background:linear-gradient(90deg,#00d9ff,#7b3cff)}
+.login{max-width:400px;margin:40px auto;padding:25px;background:#0b1122;border:1px solid #263cff;border-radius:16px}
+.login h2{text-align:center;color:#00d9ff;margin-bottom:20px}
+input{width:100%;padding:13px;margin:8px 0;border-radius:8px;border:1px solid #273cff;background:#050914;color:white}
+.login button{width:100%;padding:13px;margin-top:10px;border:none;border-radius:8px;background:#145cff;color:white;font-weight:bold}
+footer{margin-top:50px;padding:25px;text-align:center;color:#69738e;background:#070b16}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">MR CB YT</div>
+<div class="subtitle">Free Fire Achievement Hub & Community</div>
+</header>
+
+<nav>
+<button onclick="goTo('home')">Home</button>
+<button onclick="goTo('achievements')">Achievements</button>
+<button onclick="goTo('videos')">Videos</button>
+<button onclick="goTo('community')">Community</button>
+<button onclick="goTo('login')">Login</button>
+</nav>
+
+<main class="container">
+<section id="home">
+<div class="hero">
+<h1>FREE FIRE ACHIEVEMENT HUB</h1>
+<p>Track your achievements, watch gaming videos, follow updates and connect with the community.</p>
+</div>
+<div class="progress-box">
+<h2>Your Achievement Progress</h2>
+<p style="margin-top:10px;color:#9da8c7">25% Completed</p>
+<div class="progress"><div class="progress-bar"></div></div>
+</div>
+</section>
+
+<section id="achievements">
+<h2 class="section-title">Achievements</h2>
+<div class="cards">
+<div class="card"><h3>🏆 First Victory</h3><p>Win your first Free Fire match.</p></div>
+<div class="card"><h3>🔥 Booyah Master</h3><p>Achieve multiple Booyah victories.</p></div>
+<div class="card"><h3>🎯 Headshot Pro</h3><p>Complete the required headshot challenge.</p></div>
+<div class="card"><h3>⚡ Survival Expert</h3><p>Survive until the final zone.</p></div>
+</div>
+</section>
+
+<section id="videos">
+<h2 class="section-title">Gaming Videos</h2>
+<div class="cards">
+<div class="card"><h3>🎬 YouTube</h3><p>YouTube videos will appear here.</p></div>
+<div class="card"><h3>▶ Shorts</h3><p>Free Fire Shorts will appear here.</p></div>
+</div>
+</section>
+
+<section id="community">
+<h2 class="section-title">Community</h2>
+<div class="cards">
+<div class="card"><h3>👥 Community</h3><p>Connect with other Free Fire players.</p></div>
+<div class="card"><h3>📢 Updates</h3><p>Latest platform updates will appear here.</p></div>
+</div>
+</section>
+
+<section id="login">
+<div class="login">
+<h2>Member Login</h2>
+<input type="text" placeholder="Instagram ID / Free Fire UID">
+<input type="password" placeholder="Password">
+<button onclick="loginUser()">LOGIN</button>
+</div>
+</section>
+</main>
+
+<footer>© 2026 MR CB YT - Free Fire Achievement Hub</footer>
+
+<script>
+function goTo(id){
+  document.getElementById(id).scrollIntoView({behavior:"smooth"});
+}
+function loginUser(){
+  alert("Login system will be connected soon.");
+}
+</script>
+</body>
+</html>
